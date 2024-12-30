@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.btn-verifikasi, .btn-selesai {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.btn-verifikasi {
+    background-color: #4CAF50;
+}
+
+.btn-selesai {
+    background-color: #f44336;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lapor! - Form Pelaporan</title>
+    <link rel="stylesheet" href="../Mahasiswa_menu/dashboard_style.css">
+    <link rel="stylesheet" href="input_pelaporan.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="../Mahasiswa_menu/jti_logo.png" alt="Logo">
+            <h1>Lapor!</h1>
+        </div>
+        <ul>
+            <li><a href="Dashboard_Dosen.php">Beranda</a></li>
+            <li><a href="Melaporkan.html">Buat Laporan</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="header">
+            <div class="user">
+                <img src="../Lainnya/profil_logo.png" alt="User Profile">
+                <span>Yth. Dosen</span>
+            </div>
+        </div>
+        <div class="content">
+            <h2>FORM PELAPORAN</h2>
+            <form action="proses.php" method="POST" enctype="multipart/form-data">
+                
+                <!-- NIM Mahasiswa -->
+                <label for="nim">NIM Mahasiswa</label>
+                <input type="text" name="nim" id="nim" required><br>
+
+                <!-- Nama Mahasiswa -->
+                <label for="nama_mahasiswa">Nama Mahasiswa</label>
+                <input type="text" name="nama_mahasiswa" id="nama_mahasiswa" required><br>
+
+                <!-- Tanggal Pelanggaran -->
+                <label for="tanggal">Tanggal Pelanggaran</label>
+                <input type="date" name="tanggal" id="tanggal" required><br>
+
+                <label for="deskripsi_pelanggaran">Pelanggaran</label>
+                <input type="text" name="deskripsi_pelanggaran" id="deskripsi_pelanggaran" required><br>
+                <!-- Tingkat Pelanggaran -->
+                <label for="tingkat_pelanggaran">Tingkat Pelanggaran</label>
+                <select name="tingkat_pelanggaran" id="tingkat_pelanggaran" required>
+                    <option value="">Pilih Tingkat</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                    <option value="3">5</option>
+                </select><br>
+
+                <!-- Upload Bukti -->
+                <label for="bukti">Upload Bukti</label>
+                <input type="file" name="bukti" id="bukti" required><br>
+
+                <button type="submit">Kirim Laporan</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
